@@ -9,7 +9,7 @@
 .section-title::after {
   content: '';
 
-  width: 80px;
+  width: 100%;
   height: 4px;
 
   background: #00bcd4;
@@ -17,4 +17,81 @@
   position: absolute;
   left: 0;
   bottom: -15px;
+
+  border-radius: 10px;
+
+  transform-origin: left;
+  animation: underlineAppear 0.8s ease forwards;
 }
+
+@keyframes underlineAppear {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.profile-image {
+  width: 60%;
+  height: 80%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 10%;
+  align-items: center;
+}
+
+.skills {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: #181818;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  color: #ddd;
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+
+  border: 1px solid #00bcd4;
+}
+

@@ -11,20 +11,22 @@ html{
 }
 
 body{
-  background: #0f0f0f;
+  background: #0b0b0b;
   color: #f5f5f5;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
 section{
-  min-height: 100vh;
+  min-height: 10vh;
   padding: 100px 8%;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .main-content{
-  margin-left: 90px;
+  margin-left: 90%;
+  background: #0b0b0b;
+  color: #f5f5f5;
 }
 
 .title{
